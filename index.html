@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <title >Girish's Website</title>
-    <h1>Girish's Website</h1>
     <style>
         body {
             color:black;
@@ -18,7 +17,6 @@
 
         button {
             
-            color:black;
             padding: 20px 40px;
             font-size: large;
             border: none;
@@ -27,10 +25,11 @@
     </style>
 </head>
 <body>
+    <h1>Girish's Website</h1>
     <button style = "black" id="colorBtn">Click to Change Color</button>
 
     <script>
-        let colors = ["red", "white", "yellow", "green"];
+        let colors = ["red", "blue", "yellow", "green"];
         let currentColor = colors[Math.floor(Math.random() * colors.length)];
 
         const button = document.getElementById("colorBtn");
