@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Girish's Website</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            color: white;
+            padding: 20px 40px;
+            font-size: large;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <button id="colorBtn">Click to Change Color</button>
+
+    <script>
+        let colors = ["red", "white", "yellow", "green"];
+        let currentColor = colors[Math.floor(Math.random() * colors.length)];
+
+        const button = document.getElementById("colorBtn");
+        button.style.backgroundColor = currentColor;
+
+        button.addEventListener("click", () => {
+            let newColor = colors[Math.floor(Math.random() * colors.length)];
+            button.style.backgroundColor = newColor;
+        });
+    </script>
+</body>
+</html>
